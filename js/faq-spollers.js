@@ -4,15 +4,15 @@ const panels = document.querySelectorAll('.faq-spoller');
 accordion.addEventListener('click', e => {
   const activePanel = e.target.closest('.faq-spoller');
 
-  panels.forEach(item => {
-    const button = item.querySelector('.spoller-question');
-    const panel = item.querySelector('.accordion-content');
+  // panels.forEach(item => {
+  //   const button = item.querySelector('.spoller-question');
+  //   const panel = item.querySelector('.accordion-content');
 
-    item.classList.remove('active');
-    button.classList.remove('active');
-    button.setAttribute('aria-expanded', true);
-    panel.setAttribute('aria-hidden', false);
-  });
+  //   item.classList.remove('active');
+  //   button.classList.remove('active');
+  //   button.setAttribute('aria-expanded', true);
+  //   panel.setAttribute('aria-hidden', false);
+  // });
 
   if (!activePanel) return;
 
