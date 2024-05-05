@@ -26,6 +26,8 @@
     background-color: transparent;
     padding: 0;
     border: none;
+    text-align: left;
+    gap: 16px;
 
     &.active {
       color: var(--color-primary-light);
