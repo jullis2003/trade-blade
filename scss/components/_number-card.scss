@@ -1,0 +1,23 @@
+.number-card {
+  &__name {
+    color: var(--color-third-dark);
+    font-size: 14px;
+    line-height: 1.42;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+
+  &__number {
+    color: var(--color-third-purple);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 0.38;
+    letter-spacing: -1.2px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      line-height: 1.1;
+      font-size: 60px;
+    }
+  }
+}

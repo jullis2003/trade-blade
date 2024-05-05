@@ -1,0 +1,52 @@
+.past-transactions-section {
+  padding-top: 48px;
+  padding-bottom: 53px;
+  overflow: hidden;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+    padding-bottom: 118px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__status {
+    color: var(--color-secondary-q);
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: -0.56px;
+    opacity: 0.9;
+    padding-left: 11px;
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--color-secondary-q);
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 6px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 72px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+}

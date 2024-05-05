@@ -1,0 +1,130 @@
+.tariff-card {
+  border-radius: 8px;
+  border: 1px solid var(--color-third-purple);
+  padding: 16px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  transition: background-color, 0.2s;
+
+  &:hover {
+    background-color: var(--color-third-purple);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    height: 556px;
+    padding: 24px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -1.28px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    margin-top: 24px;
+    flex: 1 1 auto;
+    list-style-image: url('../../images/marker-checked.png');
+    margin-left: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 48px;
+    }
+  }
+
+  &__description-item {
+    line-height: 1.25;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: calc(100% + 48px);
+      height: 0;
+      border: 2px dotted rgba(255, 255, 255, 0.2);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: -33px;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: calc(100% + 64px);
+        margin-left: -38px;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 0;
+    }
+  }
+
+  &__price {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+    margin-bottom: 0;
+  }
+
+  &__price-discount {
+    color: var(--color-secondary-q);
+    vertical-align: super;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.72px;
+  }
+
+  &__terms {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 6px 8px;
+  }
+
+  &__months {
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  &__more-terms {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  &__button {
+    padding: 8px 24px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 24px;
+    }
+  }
+
+  &__button-accent {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    opacity: 0.56;
+    text-transform: lowercase;
+    display: block;
+  }
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>TradeBlade</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <nav class="header__nav">
+              <a href="index.html">
+                <img
+                  src="./images/icons/logo.svg"
+                  alt="Логотип TradeBlade"
+                  class="header__logo-image"
+                />
+              </a>
+
+              <ul class="header__menu">
+                <li>
+                  <a href="#numbers-section" class="header__link text-uppercase"
+                    >Цифры</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#past-transactions-section"
+                    class="header__link text-uppercase"
+                    >Сделки онлайн</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about-company-section"
+                    class="header__link text-uppercase"
+                    >о компании</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header__link text-uppercase">как начать</a>
+                </li>
+                <li>
+                  <a href="#tariffs-section" class="header__link text-uppercase"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header__link text-uppercase">отзывы</a>
+                </li>
+                <li>
+                  <a href="#faq-section" class="header__link text-uppercase"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__buttons">
+              <button
+                type="button"
+                class="button button--bordered header__btn header__btn-bordered text-uppercase"
+              >
+                вход
+              </button>
+              <button
+                type="button"
+                class="button button--primary header__btn text-uppercase"
+              >
+                регистрация
+              </button>
+            </div>
+            <button type="button" class="menu-btn-open header__burger">
+              <img
+                src="./images/icons/menu-burger.svg"
+                alt=""
+                width="32"
+                height="32"
+              />
+            </button>
+            <div class="mobile-menu">
+              <button
+                type="button"
+                class="mobile-menu__btn-close menu-btn-close"
+              >
+                <img src="./images/icons/mobile-menu-close.svg" alt="" />
+              </button>
+
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__menu">
+                  <li>
+                    <a
+                      href="#numbers-section"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >Цифры</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#past-transactions-section"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >Сделки онлайн</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#about-company-section"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >о компании</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >как начать</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#tariffs-section"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >тарифы</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#faq-section"
+                      class="mobile-menu__link text-uppercase menu-btn-close"
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="mobile-menu__buttons">
+                <button
+                  type="button"
+                  class="button button--primary mobile-menu__btn text-uppercase"
+                >
+                  регистрация
+                </button>
+                <button
+                  type="button"
+                  class="button button--bordered mobile-menu__btn mobile-menu__btn-bordered text-uppercase"
+                >
+                  войти
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="hero-section" id="hero-section">
+          <div class="container">
+            <div class="hero-section__container">
+              <div class="hero-section__image">
+                <img src="./images/eth-usdt.png" alt="ETH/USDT short" />
+              </div>
+              <div class="hero-section__content">
+                <h1 class="hero-section__title text-uppercase">
+                  моментально Копируй сделки профи трейдеров
+                </h1>
+
+                <p class="hero-section__text hero-section__text--limited">
+                  Начни копировать сделки с успешной командой профессиональных
+                  трейдеров в автоматическом режиме.
+                </p>
+
+                <form
+                  name="contact-form"
+                  autocomplete="off"
+                  class="contact-form"
+                >
+                  <div class="input">
+                    <label class="visually-hidden input__label">Email</label>
+
+                    <div class="input__box">
+                      <input
+                        type="email"
+                        name="contact-email"
+                        class="input__control hero-section__form-input"
+                        placeholder="Ваш e–mail"
+                        data-required="true"
+                      />
+
+                      <button
+                        type="submit"
+                        class="text-uppercase button button--primary input__button"
+                      >
+                        начать
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <p class="hero-section__note">5 дней бесплатного пользования</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="numbers-section" id="numbers-section">
+          <div class="rectangle-background">
+            <img src="./images/backgrounds/rectangle-background.png" alt="" />
+          </div>
+
+          <div class="container">
+            <div class="numbers-section__container">
+              <div>
+                <h2 class="numbers-section__title section-title">Цифры</h2>
+                <p class="numbers-section__text">Cентябрь 2022</p>
+              </div>
+
+              <ul class="numbers-section__list">
+                <li class="numbers-section__item">
+                  <article class="number-card">
+                    <p class="number-card__name text-uppercase">
+                      Торговой прибыли
+                    </p>
+                    <p class="number-card__number">2756%</p>
+                  </article>
+                </li>
+                <li class="numbers-section__item">
+                  <article class="number-card">
+                    <p class="number-card__name text-uppercase">
+                      фьючерсных и спотовых сделок
+                    </p>
+                    <p class="number-card__number">67</p>
+                  </article>
+                </li>
+                <li class="numbers-section__item">
+                  <article class="number-card">
+                    <p class="number-card__name text-uppercase">
+                      прибыль подписчиков
+                    </p>
+                    <p class="number-card__number">375000</p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="past-transactions-section"
+          id="past-transactions-section"
+        >
+          <div class="container">
+            <h2 class="past-transactions-section__title section-title">
+              Прошедшие сделки
+            </h2>
+            <p class="past-transactions-section__status">Онлайн</p>
+            <div class="swiper-container">
+              <ul class="past-transactions-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="transaction-card">
+                    <img
+                      src="./images/backgrounds/background-triangle.png"
+                      alt=""
+                      class="transaction-card__image"
+                    />
+                    <p class="transaction-card__usdt text-uppercase">
+                      NEAR/USDT
+                    </p>
+                    <p class="transaction-card__time">SPOT · 1 мин. назад</p>
+                    <p class="transaction-card__profit text-uppercase">
+                      Прибыль
+                    </p>
+                    <p class="transaction-card__procent">58.6206%</p>
+                    <div class="transaction-card__goal">
+                      <p class="transaction-card__goal-number">Цель 4</p>
+                      <p class="transaction-card__date">
+                        Дата входа 06.10.2022
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="transaction-card">
+                    <img
+                      src="./images/backgrounds/background-triangle.png"
+                      alt=""
+                      class="transaction-card__image"
+                    />
+                    <p class="transaction-card__usdt text-uppercase">
+                      BTC/USDT
+                    </p>
+                    <p class="transaction-card__time">SPOT · 1 мин. назад</p>
+                    <p class="transaction-card__profit text-uppercase">
+                      Прибыль
+                    </p>
+                    <p class="transaction-card__procent">6.02%</p>
+                    <div class="transaction-card__goal">
+                      <p class="transaction-card__goal-number">Цель 3</p>
+                      <p class="transaction-card__date">
+                        Дата входа 06.10.2022
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="transaction-card">
+                    <img
+                      src="./images/backgrounds/background-triangle.png"
+                      alt=""
+                      class="transaction-card__image"
+                    />
+                    <p class="transaction-card__usdt text-uppercase">
+                      ETH/USDT
+                    </p>
+                    <p class="transaction-card__time">SPOT · 1 мин. назад</p>
+                    <p class="transaction-card__profit text-uppercase">
+                      Прибыль
+                    </p>
+                    <p class="transaction-card__procent">16.3%</p>
+                    <div class="transaction-card__goal">
+                      <p class="transaction-card__goal-number">Цель 4</p>
+                      <p class="transaction-card__date">
+                        Дата входа 06.10.2022
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="transaction-card">
+                    <img
+                      src="./images/backgrounds/background-triangle.png"
+                      alt=""
+                      class="transaction-card__image"
+                    />
+                    <p class="transaction-card__usdt text-uppercase">
+                      NEAR/USDT
+                    </p>
+                    <p class="transaction-card__time">SPOT · 1 мин. назад</p>
+                    <p class="transaction-card__profit text-uppercase">
+                      Прибыль
+                    </p>
+                    <p class="transaction-card__procent">0.963%</p>
+                    <div class="transaction-card__goal">
+                      <p class="transaction-card__goal-number">Цель 4</p>
+                      <p class="transaction-card__date">
+                        Дата входа 06.10.2022
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="transaction-card">
+                    <img
+                      src="./images/backgrounds/background-triangle.png"
+                      alt=""
+                      class="transaction-card__image"
+                    />
+                    <p class="transaction-card__usdt text-uppercase">
+                      NEAR/USDT
+                    </p>
+                    <p class="transaction-card__time">SPOT · 1 мин. назад</p>
+                    <p class="transaction-card__profit text-uppercase">
+                      Прибыль
+                    </p>
+                    <p class="transaction-card__procent">58.6206%</p>
+                    <div class="transaction-card__goal">
+                      <p class="transaction-card__goal-number">Цель 4</p>
+                      <p class="transaction-card__date">
+                        Дата входа 06.10.2022
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="scrollbar"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-company-section" id="about-company-section">
+          <div class="rectangle-background">
+            <img src="./images/backgrounds/rectangle-background.png" alt="" />
+          </div>
+
+          <div class="container">
+            <div class="about-company-section__container">
+              <div class="about-company-section__content">
+                <h2 class="about-company-section__title section-title">
+                  О компании
+                </h2>
+
+                <p class="about-company-section__text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+
+                <p class="about-company-section__text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </div>
+
+              <div class="about-company-section__form">
+                <h3 class="about-company-section__form-title">
+                  Попробуйте сейчас и получите 5 дней бесплатного пользования
+                </h3>
+
+                <form
+                  name="contact-form"
+                  autocomplete="off"
+                  class="contact-form about-company-section__contact-form"
+                >
+                  <div class="input">
+                    <label class="visually-hidden input__label">Email</label>
+
+                    <div class="input__box">
+                      <input
+                        type="email"
+                        name="contact-email"
+                        class="input__control about-company-section__form-input"
+                        placeholder="Ваш e–mail"
+                        data-required="true"
+                      />
+                      <button
+                        type="submit"
+                        class="text-uppercase button button--primary input__button about-company-section__button"
+                      >
+                        попробовать
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tariffs-section" id="tariffs-section">
+          <div class="container">
+            <h2 class="tariffs-section__title section-title">тарифы</h2>
+
+            <div class="tariffs-section__buttons">
+              <button
+                type="button"
+                class="text-uppercase tariffs-section__button tariffs-section__button--active"
+              >
+                СПОТ
+              </button>
+              <button
+                type="button"
+                class="text-uppercase tariffs-section__button"
+              >
+                фьючерс
+              </button>
+            </div>
+
+            <ul class="tariffs-section__list">
+              <li class="tariffs-section__item">
+                <article class="tariff-card">
+                  <h3 class="tariff-card__name text-uppercase">STANDART</h3>
+                  <ul class="tariff-card__description">
+                    <li class="tariff-card__description-item">
+                      Ручной трейдинг
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Автоматическое или полуавтоматическое копирование сделок
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Личный кабинет со статистикой
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Среднесрочные сделки с уровнями набора портфеля
+                    </li>
+                  </ul>
+                  <div class="tariff-card__block">
+                    <p class="tariff-card__price">
+                      $234
+                      <span class="tariff-card__price-discount">-35%</span>
+                    </p>
+                    <div class="tariff-card__terms">
+                      <p class="tariff-card__months">12 месяцев</p>
+                      <button type="button" class="tariff-card__more-terms">
+                        <img src="./images/icons/arrow-dorn.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="button button--primary tariff-card__button text-uppercase"
+                  >
+                    Попробовать
+                    <span class="tariff-card__button-accent"
+                      >5 дней бесплатно</span
+                    >
+                  </button>
+                </article>
+              </li>
+              <li class="tariffs-section__item">
+                <article class="tariff-card">
+                  <h3 class="tariff-card__name">VIP</h3>
+                  <ul class="tariff-card__description">
+                    <li class="tariff-card__description-item">
+                      Ручной трейдинг
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Автоматическое или полуавтоматическое копирование сделок
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Личный кабинет со статистикой
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Краткосрочные, среднесрочные и инвест сделки
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Доступ в Vip чат с командой
+                    </li>
+                    <li class="tariff-card__description-item">
+                      Наш авторский курс по трейдингу
+                    </li>
+                  </ul>
+                  <div class="tariff-card__block">
+                    <p class="tariff-card__price">
+                      $585
+                      <span class="tariff-card__price-discount">-35%</span>
+                    </p>
+                    <div class="tariff-card__terms">
+                      <p class="tariff-card__months">12 месяцев</p>
+                      <button type="button" class="tariff-card__more-terms">
+                        <img src="./images/icons/arrow-dorn.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="button button--primary tariff-card__button text-uppercase"
+                  >
+                    Попробовать
+                    <span class="tariff-card__button-accent"
+                      >5 дней бесплатно</span
+                    >
+                  </button>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="faq-section" id="faq-section">
+          <div class="container">
+            <h2 class="faq-section__title section-title">
+              часто задаваемые вопросы
+            </h2>
+
+            <div class="faq-section__container">
+              <div class="faq-spoller">
+                <div
+                  class="faq-spoller__question spoller-question"
+                  data-tab="tab-1"
+                >
+                  Что такое TradeBlade
+                  <div class="faq-spoller__arrow">
+                    <svg width="24" height="24">
+                      <use href="./images/icons/icons.svg#icon-arrow-up"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-spoller__text spoller-text" id="tab-1">
+                  <p>
+                    Мы опытная команда, для которой трейдинг – профессия.
+                    TradeBlade является авторизованным официальным брокером
+                    биржи Binance.
+                  </p>
+                  <p>
+                    Он представляет пользователям множество преимуществ, таких
+                    как более високая скорость синхронизации API и возможность
+                    создать учетную запись Binance через платформу TradeBlade
+                    всего в 1 клик.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-spoller">
+                <div
+                  class="faq-spoller__question spoller-question"
+                  data-tab="tab-2"
+                >
+                  Что TradeBlade предлагает инвесторам
+                  <div class="faq-spoller__arrow">
+                    <svg width="24" height="24">
+                      <use href="./images/icons/icons.svg#icon-arrow-up"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-spoller__text spoller-text" id="tab-2"></div>
+              </div>
+              <div class="faq-spoller">
+                <div
+                  class="faq-spoller__question spoller-question"
+                  data-tab="tab-3"
+                >
+                  Должен ли я перевести свои средства на TradeBlade
+                  <div class="faq-spoller__arrow">
+                    <svg width="24" height="24">
+                      <use href="./images/icons/icons.svg#icon-arrow-up"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-spoller__text spoller-text" id="tab-3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <nav class="footer__nav">
+              <h4 class="footer__title text-uppercase">Быстрая навигация</h4>
+
+              <ul class="footer__menu">
+                <li>
+                  <a href="#numbers-section" class="footer__link text-uppercase"
+                    >Цифры</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#past-transactions-section"
+                    class="footer__link text-uppercase"
+                    >Сделки онлайн</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about-company-section"
+                    class="footer__link text-uppercase"
+                    >о компании</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link text-uppercase">как начать</a>
+                </li>
+                <li>
+                  <a href="#tariffs-section" class="footer__link text-uppercase"
+                    >тарифы</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link text-uppercase">отзывы</a>
+                </li>
+                <li>
+                  <a href="#faq-section" class="footer__link text-uppercase"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__info">
+              <div>
+                <a href="index.html">
+                  <img
+                    src="./images/icons/logo.svg"
+                    alt="Логотип TradeBlade"
+                    class="footer__logo-image"
+                  />
+                </a>
+              </div>
+
+              <p class="footer__copyright">
+                &copy; 2022 TradeBlade. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/faq-spollers.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/transaction-slider.js"></script>
+  </body>
+</html>

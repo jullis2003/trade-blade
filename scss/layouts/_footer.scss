@@ -1,0 +1,113 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 74px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: column;
+      gap: 224px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.42;
+    opacity: 0.4;
+    max-width: 107px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-decoration: none;
+    color: var(--color-primary-white);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-secondary-q);
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+
+    &::before {
+      content: '';
+      width: calc(100% + 48px);
+      height: 1px;
+      background-color: var(--color-primary-white);
+      opacity: 0.8;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -20px;
+      margin-left: -24px;
+
+      @media screen and (min-width: $bp-desktop) {
+        height: calc(100% + 68px);
+        width: 1px;
+        margin-top: -27px;
+      }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 412px;
+      align-items: flex-end;
+      gap: 0;
+    }
+  }
+
+  &__logo-image {
+    width: 165px;
+    height: 80px;
+  }
+
+  &__copyright {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px #57e1ff;
+  line-height: 1.42;
+  font-weight: 500;
+  border: 1.5px solid var(--Q, #57e1ff);
+  font-size: 14px;
+  transition: background-color 0.2s;
+
+  &--bordered {
+    color: var(--color-secondary-q);
+  }
+
+  &--primary {
+    background-color: var(--color-secondary-q);
+    color: var(--color-primary-dark);
+  }
+
+  &:hover {
+    background-color: var(--color-primary-white);
+    opacity: 0.1;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,21 @@
+.faq-section {
+  padding-top: 56px;
+  padding-bottom: 54px;
+  background-color: var(--color-primary-white);
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 96px 217px;
+  }
+
+  &__title {
+    color: var(--color-third-dark);
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__container {
+  }
+}

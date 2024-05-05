@@ -1,0 +1,91 @@
+.about-company-section {
+  position: relative;
+  background-color: var(--color-primary-white);
+  padding-top: 62px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 80px;
+    padding-bottom: 92px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 413px;
+    }
+  }
+
+  &__title {
+    color: var(--color-third-dark);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    color: var(--color-primary-dark);
+    line-height: 1.25;
+    opacity: 0.8;
+  }
+
+  &__form {
+    padding: 16px;
+    background-color: var(--color-third-purple);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 64px;
+      max-width: 630px;
+    }
+  }
+
+  &__form-title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 28px;
+      line-height: 1.28;
+      letter-spacing: -1.12px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__contact-form {
+    width: 100%;
+  }
+
+  &__form-input {
+    background-color: var(--color-third-light);
+  }
+
+  &__button {
+    position: static;
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      width: auto;
+    }
+  }
+}

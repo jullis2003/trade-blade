@@ -1,0 +1,84 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  z-index: 5;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__logo-image {
+    width: 107px;
+    height: 52px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 132px;
+      height: 64px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-primary-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-secondary-q);
+    }
+  }
+
+  &__buttons {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  &__btn {
+    font-size: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  &__btn-bordered {
+    background-color: rgba(87, 225, 255, 0.2);
+  }
+
+  &__burger {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

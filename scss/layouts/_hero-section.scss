@@ -1,0 +1,84 @@
+.hero-section {
+  padding-top: 92px;
+  padding-bottom: 37px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 228px;
+    padding-bottom: 134px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 630px;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1.4px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 60px;
+      line-height: 1.2;
+      letter-spacing: -2.4px;
+    }
+  }
+
+  &__text {
+    color: var(--color-secondary-light);
+    opacity: 0.8;
+    line-height: 1.25;
+    margin-bottom: 24px;
+
+    &--limited {
+      max-width: 90%;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      &--limited {
+        max-width: 565px;
+      }
+    }
+  }
+
+  &__form-input {
+    background-color: var(--color-secondary-dark);
+  }
+
+  &__note {
+    font-size: 14px;
+    line-height: 1.43;
+    opacity: 0.3;
+    margin-top: 12px;
+  }
+
+  &__image {
+    width: 280px;
+    height: 134px;
+    animation-name: translated;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-right: 53px;
+      width: 469px;
+      height: 209px;
+    }
+  }
+}

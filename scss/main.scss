@@ -1,0 +1,31 @@
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/keyframes';
+@import './utils/texts';
+@import './utils/utils';
+
+@import './components/buttons';
+@import './components/faq-spoller';
+@import './components/input';
+@import './components/links';
+@import './components/number-card';
+@import './components/rectangle-background';
+@import './components/scrollbar';
+@import './components/tariff-card';
+@import './components/transaction-card';
+
+@import './layouts/about-company-section';
+@import './layouts/container';
+@import './layouts/faq-section';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/mobile-menu';
+@import './layouts/numbers-section';
+@import './layouts/page';
+@import './layouts/past-transactions-section';
+@import './layouts/section';
+@import './layouts/tariffs-section';

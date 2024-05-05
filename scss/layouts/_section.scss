@@ -1,0 +1,16 @@
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+
+  &--centered {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 44px;
+    letter-spacing: -1.76px;
+  }
+}

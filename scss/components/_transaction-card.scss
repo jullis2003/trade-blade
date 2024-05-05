@@ -1,0 +1,87 @@
+.transaction-card {
+  position: relative;
+  padding: 16px;
+  height: 208px;
+  background-image: url('../../images/backgrounds/transaction-background.png');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  // background-size: cover;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    margin-top: 8px;
+  }
+
+  &__usdt,
+  &__time,
+  &__profit,
+  &__procent {
+    font-weight: 500;
+  }
+
+  &__time,
+  &__profit,
+  &__goal-number,
+  &__date {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+  }
+
+  &__time,
+  &__profit,
+  &__procent {
+    line-height: 1.28;
+  }
+
+  &__time,
+  &__date {
+    opacity: 0.4;
+  }
+
+  &__usdt {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+    margin-bottom: 2px;
+  }
+
+  &__time {
+    margin-bottom: 48px;
+  }
+
+  &__profit {
+    margin-bottom: 0;
+  }
+
+  &__procent {
+    color: var(--color-secondary-q);
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    position: relative;
+    margin-bottom: 9px;
+
+    &::after {
+      content: '';
+      width: 9px;
+      height: 16px;
+      background-image: url('../../images/arrow.png');
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      margin-top: 6px;
+      margin-left: 6px;
+    }
+  }
+
+  &__goal {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__goal-number {
+    opacity: 0.7;
+  }
+}

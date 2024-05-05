@@ -1,0 +1,11 @@
+.rectangle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -20px;
+  width: 70%;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-top: -56px;
+  }
+}
