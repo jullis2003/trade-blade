@@ -60,6 +60,12 @@
     background-color: var(--color-secondary-dark);
   }
 
+  .submit-text {
+    color: var(--color-primary-white);
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
   &__note {
     font-size: 14px;
     line-height: 1.43;

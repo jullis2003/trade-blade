@@ -3,12 +3,14 @@
   padding: 16px;
   margin-bottom: 12px;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
   transition: background-color 0.2s;
 
-  &:hover {
-    background-color: rgba(106, 84, 255, 0.3);
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &.active {
+    background-color: var(--color-third-purple);
   }
 
   &__question {
@@ -21,9 +23,12 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    border: none;
 
     &.active {
-      color: var(--color-primary-white);
+      color: var(--color-primary-light);
     }
 
     @media screen and (min-width: $bp-tablet) {
@@ -50,17 +55,9 @@
   &__text {
     line-height: 1.25;
     opacity: 0.8;
-    overflow: hidden;
-    transition: max-height 0.2s, opacity 0.2s, visibility 0.2s;
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-
-    &.active {
-      visibility: visible;
-      opacity: 1;
-      transition: max-height 0.2s, opacity 0.2s, visibility 0.2s;
-    }
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
 
     p:first-of-type {
       margin-top: 12px;
@@ -68,6 +65,14 @@
 
     p:last-of-type {
       margin-bottom: 0;
+    }
+
+    &[aria-hidden='true'] {
+      grid-template-rows: 1fr;
+    }
+
+    div {
+      overflow: hidden;
     }
   }
 }

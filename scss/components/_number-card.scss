@@ -1,4 +1,10 @@
 .number-card {
+  width: 149px;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 262px;
+  }
+
   &__name {
     color: var(--color-third-dark);
     font-size: 14px;

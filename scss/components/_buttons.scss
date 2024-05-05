@@ -9,7 +9,7 @@
   font-weight: 500;
   border: 1.5px solid var(--Q, #57e1ff);
   font-size: 14px;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, opacity 0.2s;
 
   &--bordered {
     color: var(--color-secondary-q);

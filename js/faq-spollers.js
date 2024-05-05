@@ -1,27 +1,40 @@
-const titles = document.querySelectorAll('.spoller-question');
-const contents = document.querySelectorAll('.spoller-text');
+const accordion = document.querySelector('.accordion');
+const panels = document.querySelectorAll('.faq-spoller');
 
-titles.forEach(item =>
-  item.addEventListener('click', () => {
-    const activeContent = document.querySelector('#' + item.dataset.tab);
+accordion.addEventListener('click', e => {
+  const activePanel = e.target.closest('.faq-spoller');
 
-    if (activeContent.classList.contains('active')) {
-      activeContent.classList.remove('active');
-      item.classList.remove('active');
+  panels.forEach(item => {
+    const button = item.querySelector('.spoller-question');
+    const panel = item.querySelector('.accordion-content');
 
-      activeContent.style.maxHeight = 0;
-    } else {
-      contents.forEach(element => {
-        element.classList.remove('active');
-        element.style.maxHeight = 0;
-      });
+    item.classList.remove('active');
+    button.classList.remove('active');
+    button.setAttribute('aria-expanded', true);
+    panel.setAttribute('aria-hidden', false);
+  });
 
-      titles.forEach(element => element.classList.remove('active'));
+  if (!activePanel) return;
 
-      item.classList.add('active');
-      activeContent.classList.add('active');
+  toggleAccordion(activePanel);
+});
 
-      activeContent.style.maxHeight = activeContent.scrollHeight + 'px';
-    }
-  }),
-);
+function toggleAccordion(panelToActivate) {
+  const activeButton = panelToActivate.querySelector('.spoller-question');
+  const activePanel = panelToActivate.querySelector('.accordion-content');
+  const activePanelIsOpened = activeButton.getAttribute('aria-expanded');
+
+  if (activePanelIsOpened === 'true') {
+    activeButton.setAttribute('aria-expanded', false);
+    activePanel.setAttribute('aria-hidden', true);
+
+    panelToActivate.classList.add('active');
+    activeButton.classList.add('active');
+  } else {
+    activeButton.setAttribute('aria-expanded', true);
+    activePanel.setAttribute('aria-hidden', false);
+
+    panelToActivate.classList.remove('active');
+    activeButton.classList.remove('active');
+  }
+}

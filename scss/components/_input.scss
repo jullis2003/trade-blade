@@ -68,4 +68,16 @@
       padding-bottom: 16px;
     }
   }
+
+  .error &__control {
+    border-color: var(--color-third-light);
+  }
+
+  .error-text {
+    color: var(--color-primary-white);
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
