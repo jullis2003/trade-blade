@@ -2,6 +2,10 @@ const swiper = new Swiper('.swiper-container', {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+  },
+  loop: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
