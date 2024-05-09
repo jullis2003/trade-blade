@@ -24,6 +24,10 @@
     background-color: var(--color-primary-white);
   }
 
+  &.active &__text {
+    background-color: var(--color-third-purple);
+  }
+
   &__question {
     color: var(--color-primary-dark);
     font-size: 20px;
@@ -35,6 +39,7 @@
     padding: 16px 12px 16px;
     user-select: none;
     position: relative;
+    transition: background-color 0.2s, color 0.2s;
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 24px;
@@ -50,9 +55,10 @@
     width: 12px;
     height: 2px;
     background-color: var(--color-primary-dark);
-    transition: all 0.4s ease 0s;
+    transition: background-color 0.2s, transform 0.2s;
     opacity: 0.8;
     right: 0;
+    border-radius: 12px;
   }
 
   &__question::before {
@@ -70,8 +76,8 @@
     opacity: 0.8;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s;
-    background-color: var(--color-third-purple);
+    transition: max-height 0.2s, background-color 0.2s;
+    background-color: var(--color-secondary-light);
     padding-right: 16px;
     padding-left: 16px;
   }
